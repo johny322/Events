@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Быстрый старт. Размещение интерактивной карты на странице</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=cb653bda-fb55-45f9-a694-08c7d2f55d29&lang=ru_RU" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init(){
+            var myMap = new ymaps.Map("map", {
+                center: [56.32296358232477,44.00450273144529],
+                zoom: 10
+            });
+            myMap.geoObjects.add(
+                new ymaps.Placemark(
+                    [56.32296358232477,44.00450273144529],
+                    {},
+                    {
+                        preset: 'islands#redIcon',
+                    }
+                )
+            );
+        }
+    </script>
+</head>
+
+<body>
+    <div id="map" style="width: 600px; height: 400px"></div>
+</body>
+
+</html>

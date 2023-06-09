@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin&family=Kaushan+Script&family=Montserrat:wght@100&family=Roboto:wght@400;700&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="scss/blocks/index.css">
+    <title>ПоходПоНН</title>
+</head>
+<body>
+<div class='page'>
+    <header class="header">
+        <div class="header__container">
+            <a href="index.html" class="header__logo">
+                ПоходПоНН
+            </a>
+            <div class="header__address">
+                <a class="header__address-text"
+                   href="https://yandex.ru/maps/47/nizhny-novgorod/house/kreml_2/YE0YdgdhSkcDQFtsfX9zdnlnYg==/?ll=44.001324%2C56.327546&z=16">
+                    г. Н. Новгород, Кремль, д. 2
+                </a>
+            </div>
+            <div class="header__image">
+                <button class="header__image-button" type="button">
+                    <img class="header__image" src="images/auth.png" alt="auth">
+                </button>
+            </div>
+            <div class="header__call">
+            <span class="header__call-number">
+              <svg
+                      width="20"
+                      height="19"
+                      viewBox="0 0 20 19"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                        d="M12.8958 19C14.435 18.9998 15.8115 18.4836 16.8763 17.4187L18.4314 15.8638C19.2069 15.0879 19.2069 13.8253 18.4312 13.0498L16.0684 10.687C15.6642 10.2825 15.1061 10.0726 14.5342 10.108C13.9636 10.1446 13.4358 10.4252 13.0864 10.8776L11.5539 12.8621C10.4392 12.2637 9.39867 11.4848 8.45685 10.5428C7.51984 9.6058 6.74375 8.57103 6.14674 7.46374L8.1363 5.92742C8.58869 5.57818 8.86932 5.05067 8.9059 4.48023C8.94252 3.90963 8.7316 3.35028 8.32711 2.94579L5.96451 0.582976C5.5887 0.206958 5.089 0 4.55729 0C4.02579 0 3.52611 0.206947 3.15049 0.582976L1.91362 1.81942C1.78598 1.92781 1.67989 2.0249 1.58133 2.12325C-1.299 5.00315 -0.165453 10.1595 4.33712 14.6618C7.17513 17.5 10.2724 18.9997 12.8956 18.9997L12.8958 19ZM2.52937 3.07221C2.616 2.98579 2.70723 2.90481 2.80014 2.82676C2.81458 2.81442 2.8286 2.80165 2.8422 2.78805L4.09895 1.53152C4.22136 1.40889 4.38415 1.34152 4.5572 1.34152C4.73046 1.34152 4.89325 1.40889 5.01588 1.53152L7.37848 3.89433C7.51219 4.02825 7.57935 4.2059 7.56721 4.39443C7.55508 4.58296 7.46594 4.75036 7.31633 4.86608L5.05872 6.60933C4.70383 6.88344 4.59231 7.37143 4.79339 7.77025C5.47285 9.11758 6.38617 10.3695 7.50799 11.4913C8.63478 12.6183 9.89362 13.535 11.2498 14.2157C11.6478 14.4153 12.1351 14.3038 12.4086 13.9498L14.1477 11.6976C14.2632 11.548 14.4308 11.4589 14.6193 11.4469C14.8085 11.4331 14.9855 11.502 15.1192 11.6355L17.482 13.9983C17.7348 14.2511 17.7346 14.6626 17.482 14.9154L15.9271 16.4703C13.6051 18.7917 9.22904 17.6587 5.28486 13.7143C1.34137 9.76976 0.208099 5.39366 2.52945 3.07204L2.52937 3.07221Z"
+                        fill="#1D1818"
+                />
+              </svg>
+              +7 (123) 456 78 90
+            </span>
+            </div>
+        </div>
+    </header>
+    <section class="catalog-menu">
+        <div class="catalog-menu__container">
+            <ul class="catalog-menu__list">
+                <li class="catalog-menu__item">
+                    <a href='#/../index.html' class="catalog-menu__link">
+                        Главная страница
+                    </a>
+                </li>
+                <li class="catalog-menu__item">
+                    <a href='Route.html' class="catalog-menu__link">
+                        Популярные маршурты
+                    </a>
+                </li>
+            </ul>
+            <button class="catalog-menu__button">
+                <a href="#about-us">
+                    О нас
+                </a>
+            </button>
+        </div>
+    </section>
+    <main>
+
+        <section class="wrapper">
+            <div class="container">
+                <img class="image" src="./images/N.Novgorod.jpg" alt="Нижний Новгород"/>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section__container">
+                <div class="section__body-wrapper">
+                    <div class="filter">
+                        <h2 class="filter__title">Фильтры</h2>
+                        <form action="#">
+                            <ul class="accordion">
+                                <li class="accordion__item">
+                                    <div class="accordion__head-wrapper">
+                                        <h3 class="accordion__title">
+                                            Районы города
+                                        </h3>
+                                        <button type="button" class="accordion__button"></button>
+                                    </div>
+                                    <div class="accordion__content">
+                                        <label class="accordion__label">Московский<input class="accordion__checkbox"
+                                                                                         type="checkbox" name="area"
+                                                                                         value="Московский"></label>
+                                        <label class="accordion__label">Сормовский<input class="accordion__checkbox"
+                                                                                         type="checkbox" name="area"
+                                                                                         value="Сормовский"></label>
+                                        <label class="accordion__label">Ленинский<input class="accordion__checkbox"
+                                                                                        type="checkbox" name="area"
+                                                                                        value="Ленинский"></label>
+                                        <label class="accordion__label">Канавинский<input class="accordion__checkbox"
+                                                                                          type="checkbox" name="area"
+                                                                                          value="Канавинский"></label>
+                                        <label class="accordion__label">Автозаводский<input class="accordion__checkbox"
+                                                                                            type="checkbox" name="area"
+                                                                                            value="Автозаводский"></label>
+                                        <label class="accordion__label">Нижегородский<input class="accordion__checkbox"
+                                                                                            type="checkbox" name="area"
+                                                                                            value="Нижегородский"></label>
+                                        <label class="accordion__label">Советский<input class="accordion__checkbox"
+                                                                                        type="checkbox" name="area"
+                                                                                        value="Советский"></label>
+                                        <label class="accordion__label">Приокский<input class="accordion__checkbox"
+                                                                                        type="checkbox" name="area"
+                                                                                        value="Приокский"></label>
+                                    </div>
+                                </li>
+                                <li class="accordion__item">
+                                    <div class="accordion__head-wrapper">
+                                        <h3 class="accordion__title">
+                                            Возраст
+                                        </h3>
+                                        <button type="button" class="accordion__button"></button>
+                                    </div>
+                                    <div class="accordion__content">
+                                        <label class="accordion__label">0+<input class="accordion__checkbox"
+                                                                                 type="checkbox" name="age"
+                                                                                 value="0"></label>
+                                        <label class="accordion__label">6+<input class="accordion__checkbox"
+                                                                                 type="checkbox" name="age"
+                                                                                 value="6"></label>
+                                        <label class="accordion__label">12+<input class="accordion__checkbox"
+                                                                                  type="checkbox" name="age" value="12"></label>
+                                        <label class="accordion__label">16+<input class="accordion__checkbox"
+                                                                                  type="checkbox" name="age" value="16"></label>
+                                        <label class="accordion__label">18+<input class="accordion__checkbox"
+                                                                                  type="checkbox" name="age" value="18"></label>
+                                    </div>
+                                </li>
+                                <li class="accordion__item">
+                                    <div class="accordion__head-wrapper">
+                                        <h3 class="accordion__title">
+                                            Тип места
+                                        </h3>
+                                        <button type="button" class="accordion__button"></button>
+                                    </div>
+                                    <div class="accordion__content">
+                                        <label class="accordion__label">Музеи<input class="accordion__checkbox"
+                                                                                    type="checkbox" name="place"
+                                                                                    value="Музеи"></label>
+                                        <label class="accordion__label">Памятники<input class="accordion__checkbox"
+                                                                                        type="checkbox" name="place"
+                                                                                        value="Памятники"></label>
+                                        <label class="accordion__label">Развлечения<input class="accordion__checkbox"
+                                                                                          type="checkbox" name="place"
+                                                                                          value="Развлечения"></label>
+                                        <label class="accordion__label">Выставки и галереи<input
+                                                class="accordion__checkbox" type="checkbox" name="place"
+                                                value="Развлечения"></label>
+                                        <label class="accordion__label">Парки<input class="accordion__checkbox"
+                                                                                    type="checkbox" name="place"
+                                                                                    value="Развлечения"></label>
+                                        <label class="accordion__label">Кинотеатры<input class="accordion__checkbox"
+                                                                                         type="checkbox" name="place"
+                                                                                         value="Развлечения"></label>
+                                        <label class="accordion__label">Культура<input class="accordion__checkbox"
+                                                                                       type="checkbox" name="place"
+                                                                                       value="Развлечения"></label>
+                                        <label class="accordion__label">Ремесло<input class="accordion__checkbox"
+                                                                                      type="checkbox" name="place"
+                                                                                      value="Развлечения"></label>
+                                        <label class="accordion__label">Спортивные развлечения<input
+                                                class="accordion__checkbox" type="checkbox" name="place"
+                                                value="Развлечения"></label>
+                                        <label class="accordion__label">Архитектура<input class="accordion__checkbox"
+                                                                                          type="checkbox" name="place"
+                                                                                          value="Развлечения"></label>
+                                        <label class="accordion__label">Театры<input class="accordion__checkbox"
+                                                                                     type="checkbox" name="place"
+                                                                                     value="Развлечения"></label>
+                                        <label class="accordion__label">Фестивали<input class="accordion__checkbox"
+                                                                                        type="checkbox" name="place"
+                                                                                        value="Развлечения"></label>
+                                        <label class="accordion__label">Концерты<input class="accordion__checkbox"
+                                                                                       type="checkbox" name="place"
+                                                                                       value="Развлечения"></label>
+                                    </div>
+                                </li>
+                                <li class="accordion__item">
+                                    <div class="accordion__head-wrapper">
+                                        <h3 class="accordion__title">
+                                            Пушкинская карта
+                                        </h3>
+                                        <button type="button" class="accordion__button"></button>
+                                    </div>
+                                    <div class="accordion__content">
+                                        <label class="accordion__label">Есть<input class="accordion__checkbox"
+                                                                                   type="checkbox" name="card"
+                                                                                   value="Есть"></label>
+                                        <label class="accordion__label">Нет<input class="accordion__checkbox"
+                                                                                  type="checkbox" name="card"
+                                                                                  value="Нет"></label>
+                                    </div>
+                                </li>
+                                <li class="accordion__item">
+                                    <div class="accordion__head-wrapper">
+                                        <h3 class="accordion__title">
+                                            Время работы
+                                        </h3>
+                                        <button type="button" class="accordion__button"></button>
+                                    </div>
+                                    <div class="accordion__content">
+                                        <label class="accordion__label">Круглые сутки<input class="accordion__checkbox"
+                                                                                            type="checkbox" name="time"
+                                                                                            value="Круглые сутки"></label>
+                                        <label class="accordion__label">с 8:00 до 21:00<input
+                                                class="accordion__checkbox" type="checkbox" name="time"
+                                                value="8-21"></label>
+                                        <label class="accordion__label">с 21:00 до 8:00<input
+                                                class="accordion__checkbox" type="checkbox" name="time"
+                                                value="21-8"></label>
+                                    </div>
+                                </li>
+                                <li class="accordion__item">
+                                    <div class="accordion__head-wrapper">
+                                        <h3 class="accordion__title">
+                                            Количество человек
+                                        </h3>
+                                        <button type="button" class="accordion__button"></button>
+                                    </div>
+                                    <div class="accordion__content">
+                                        <label class="accordion__label">На одного<input class="accordion__checkbox"
+                                                                                        type="checkbox" name="people"
+                                                                                        value="На одного"></label>
+                                        <label class="accordion__label">На двоих<input class="accordion__checkbox"
+                                                                                       type="checkbox" name="people"
+                                                                                       value="На двоих"></label>
+                                        <label class="accordion__label">На троих<input class="accordion__checkbox"
+                                                                                       type="checkbox" name="people"
+                                                                                       value="На троих"></label>
+                                        <label class="accordion__label">Более трёх<input class="accordion__checkbox"
+                                                                                         type="checkbox" name="people"
+                                                                                         value="Более трёх"></label>
+                                    </div>
+                                </li>
+                                <li class="accordion__item">
+                                    <div class="accordion__head-wrapper">
+                                        <h3 class="accordion__title">
+                                            Наличие акций
+                                        </h3>
+                                        <button type="button" class="accordion__button"></button>
+                                    </div>
+                                    <div class="accordion__content">
+                                        <label class="accordion__label">Есть<input class="accordion__checkbox"
+                                                                                   type="checkbox" name="discount"
+                                                                                   value="Есть"></label>
+                                        <label class="accordion__label">Нет<input class="accordion__checkbox"
+                                                                                  type="checkbox" name="discount"
+                                                                                  value="Нет"></label>
+                                    </div>
+                                </li>
+                                <li class="accordion__item">
+                                    <div class="accordion__head-wrapper">
+                                        <h3 class="accordion__title">
+                                            Стоимость
+                                        </h3>
+                                        <button type="button" class="accordion__button"></button>
+                                    </div>
+                                    <div class="accordion__content">
+                                        <label class="accordion__label">Бесплатно<input class="accordion__checkbox"
+                                                                                        type="checkbox"
+                                                                                        name="price"></label>
+                                        <label class="accordion__label">От 100 до 300<input class="accordion__checkbox"
+                                                                                            type="checkbox"
+                                                                                            name="price"></label>
+                                        <label class="accordion__label">От 300 до 500<input class="accordion__checkbox"
+                                                                                            type="checkbox"
+                                                                                            name="price"></label>
+                                        <label class="accordion__label">От 500 до 1000<input class="accordion__checkbox"
+                                                                                             type="checkbox"
+                                                                                             name="price"></label>
+                                    </div>
+                                </li>
+                                <li class="accordion__item">
+                                    <div class="accordion__head-wrapper">
+                                        <h3 class="accordion__title">
+                                            Временные события
+                                        </h3>
+                                        <button type="button" class="accordion__button"></button>
+                                    </div>
+                                    <div class="accordion__content">
+                                        <label class="accordion__label">Временное<input class="accordion__checkbox"
+                                                                                        type="checkbox" name="card"
+                                                                                        value="Есть"></label>
+                                        <label class="accordion__label">Постоянное<input class="accordion__checkbox"
+                                                                                         type="checkbox" name="card"
+                                                                                         value="Нет"></label>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button class="filter__button" type="submit">Применить</button>
+                        </form>
+                    </div>
+                    <div>
+                        <h2 class="section__title">Мероприятия</h2>
+                        <ul class="section__list">
+                            <li class="section__item">
+                                <a href='#' class="section__link">
+                                    <img class="section__image" src="./images/Maneskin.jpg" alt=""/>
+                                    <div>
+                                        <h3 class="section__item-title">Maneskin</h3>
+                                        <p>Maneskin — итальянская рок-группа, участниками которой являются вокалист
+                                            Дамиано Давид, басистка Виктория Де Анджелис, гитарист Томас Раджи и
+                                            барабанщик Итан Торкио. Основными вехами на пути группы к известности стали
+                                            второе место в одиннадцатом сезоне итальянского шоу талантов X Factor в 2017
+                                            году, победа на Фестивале в Сан-Ремо, представлявшем собой итальянский
+                                            национальный отбор на Евровидение-2021, а также победа на Евровидении-2021 с
+                                            песней «Zitti e buoni».</p>
+                                        <span>01.01.2000</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="section__item">
+                                <a href='#' class="section__link">
+                                    <img class="section__image" src="./images/Maneskin.jpg" alt=""/>
+                                    <div>
+                                        <h3 class="section__item-title">Концерт группы 'Мумий Тролль'</h3>
+                                        <p>"Группа 'Мумий Тролль' - одна из самых известных и влиятельных российских
+                                            рок-групп, которая завоевала сердца миллионов поклонников своей уникальной и
+                                            запоминающейся музыкой. На этом концерте вы сможете окунуться в атмосферу
+                                            энергии и страсти, которую группа воплощает на сцене. Вы услышите их хиты,
+                                            которые стали истинными гимнами поколений, и испытаете неподдельное восторг
+                                            и радость от живого выступления 'Мумий Тролля'. Приходите и создайте
+                                            незабываемые музыкальные впечатления!"</p>
+                                        <span>01.01.2000</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="section__item">
+                                <a href='#' class="section__link">
+                                    <img class="section__image" src="./images/Maneskin.jpg" alt=""/>
+                                    <div>
+                                        <h3 class="section__item-title">Театральная постановка 'Гамлет'</h3>
+                                        <p>Приглашаем вас на увлекательную театральную постановку 'Гамлет', одной из
+                                            величайших пьес в мировой драматургии. Это захватывающее представление о
+                                            любви, предательстве, власти и судьбе привлекает зрителей своими сложными
+                                            персонажами и глубокими эмоциями. Вы сможете насладиться высоким искусством
+                                            актеров, захватывающим сюжетом и неповторимой атмосферой театра.
+                                            Представление 'Гамлет' - это шанс окунуться в мир классической литературы и
+                                            испытать мощную эмоциональную историю на сцене.</p>
+                                        <span>01.01.2000</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="section__item">
+                                <a href='#' class="section__link">
+                                    <img class="section__image" src="./images/Maneskin.jpg" alt=""/>
+                                    <div>
+                                        <h3 class="section__item-title">Музыкальный фестиваль 'Роковая Волна'</h3>
+                                        <p>"Приглашаем вас на уникальный музыкальный фестиваль 'Роковая Волна', который
+                                            соберет лучшие рок-исполнителей со всего мира на одной сцене. Вас ожидают
+                                            дни насыщенные звуками гитар и мощными ритмами, атмосфера безудержного
+                                            веселья и единения с музыкой. Во время фестиваля вы сможете насладиться
+                                            живыми выступлениями известных групп и открыть для себя новых талантливых
+                                            исполнителей. Подарите себе незабываемые впечатления и станьте частью этого
+                                            музыкального праздника!"</p>
+                                        <span>01.01.2000</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="pagination">
+                <a href="#">«</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">»</a>
+        </section>
+        <section id="about-us" class="about-us">
+            <div class="about-us__container">
+                <h2 class="about-us__title">О нас</h2>
+                <div class="about-us__wrapper"><p class="about-us__text">Мы являемся Департаментом внешних связей и
+                    туризма в городе Нижнем Новгороде, мы занимается организацией и продвижением туристических
+                    мероприятий, а также работаем с развитием международного сотрудничества для привлечения инвестиций в
+                    регион</p><img class="about-us__image" src="images/2.jpg" alt="департамент"></div>
+                <div class="about-us__wrapper"><img class="about-us__image" src="images/1.jpg" alt="департамент">
+                    <p class="about-us__text">Наш департамент является надежным партнером для представителей
+                        туристических и инвестиционных отраслей, а также для гостей города. </p></div>
+                <div class="about-us__wrapper"><p class="about-us__text">В своей деятельности мы ориентированы на
+                    высокий уровень сервиса и профессиональный подход к решению задач.</p><img class="about-us__image"
+                                                                                               src="images/3.jpg"
+                                                                                               alt="департамент"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <h2 class="footer__title">Контакты</h2>
+            <p class="footer__text">Вы можете связаться с нами также Вконтаке<a href="https://vk.com/bogda41"
+                                                                                target="_blank"><img
+                    class="footer__image" src="images/vk.svg" alt="Vk"></a></p>
+        </div>
+    </footer>
+    <div class="popup popup_event">
+        <div class="popup__container">
+            <h3 class="popup__title">Maneskin</h3>
+            <button type="button" class="popup__close">
+                <img class="popup__close-pic" src="./images/close.svg" alt="Крестик для закрытия окна">
+            </button>
+            <ul class="popup__list">
+                <li class="popup__item">Возраст: 18+</li>
+                <li class="popup__item">Место проведения: стадион</li>
+                <li class="popup__item">Время начала: 18:00</li>
+            </ul>
+            <p>Maneskin — итальянская рок-группа, участниками которой являются вокалист Дамиано Давид, басистка Виктория
+                Де Анджелис, гитарист Томас Раджи и барабанщик Итан Торкио. Основными вехами на пути группы к
+                известности стали второе место в одиннадцатом сезоне итальянского шоу талантов X Factor в 2017 году,
+                победа на Фестивале в Сан-Ремо, представлявшем собой итальянский национальный отбор на Евровидение-2021,
+                а также победа на Евровидении-2021 с песней «Zitti e buoni».</p>
+            <span class="popup__price">Стоимость: 500 рублей</span>
+            <span class="popup__date">До начала мероприятия: 10 дней</span>
+        </div>
+    </div>
+    <div class="popup popup_auth">
+        <div class="popup__container popup__container">
+            <h3 class="popup__title popup__title">Вход</h3>
+            <button type="button" class="popup__close">
+                <img class="popup__close-pic" src="./images/close.svg"
+                     alt="Крестик для закрытия окна">
+            </button>
+            <form class="form" name="profile-form">
+                <div class="form__items form-items">
+                    <input type="text" value=""
+                           placeholder="Логин" class="form__item form__item_login" id="card-name-input" required>
+                    <input type="password" value="" placeholder="Пароль" class="form__item form__item_password"
+                           id="card-url-input" required>
+                </div>
+                <button type="submit" class="form__button form__button">Войти</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="./scripts/script.js"></script>
+</body>
+</html>
