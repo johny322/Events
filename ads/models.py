@@ -35,8 +35,8 @@ class Event(models.Model):
     longitude = models.FloatField(verbose_name='Долгота', null=True, blank=True)
 
     class Meta:
-        verbose_name = 'Событие'
-        verbose_name_plural = 'События'
+        verbose_name = 'Место посещения'
+        verbose_name_plural = 'Места посещения'
 
     def __str__(self):
         return self.title
