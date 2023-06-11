@@ -18,7 +18,7 @@ persons_count_choices = [
 class Event(models.Model):
     title = models.CharField(max_length=200, verbose_name='Название', null=True, blank=False)
     description = models.TextField(verbose_name='Описание', null=True, blank=False)
-    start_date = models.DateTimeField(verbose_name='Начальная дата', null=True, blank=False)
+    start_date = models.DateTimeField(verbose_name='Начальная дата', null=True, blank=True)
     age = models.IntegerField(verbose_name='Возраст', default=0, null=True, blank=False)
     place = models.CharField(max_length=200, verbose_name='Тип места', null=True, blank=False)
     price = models.IntegerField(verbose_name='Цена', default=0, null=True, blank=False)
@@ -43,6 +43,8 @@ class Event(models.Model):
 
     @property
     def get_date_delta(self):
+        if not self.start_date:
+            return
         now = datetime.datetime.now()
         delta = self.start_date.replace(tzinfo=None) - now
         if delta.days < 0:

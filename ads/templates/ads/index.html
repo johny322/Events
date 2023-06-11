@@ -35,7 +35,7 @@
                     description: '{{ event.description }}',
                     age: '{{ event.age }}+',
                     location: '{{ event.place }}',
-                    startTime: '{{ event.start_date|date:"H:i" }}',
+                    startTime: '{% if event.start_date %}{{ event.start_date|date:"H:i" }}{% else %}круглосуточно{% endif %}',
                     price: '{{ event.price }}',
                     daysLeft: '{% if event.get_date_delta %}{{ event.get_date_delta }}{% else %}0{% endif %}',
                 },
@@ -91,7 +91,7 @@
                 </li>
                 <li class="catalog-menu__item">
                     <a href="{% url 'map' %}" class="catalog-menu__link">
-                        Популярные маршурты
+                        Местоположение на карте
                     </a>
                 </li>
             </ul>
@@ -356,7 +356,9 @@
                                         <div>
                                             <h3 class="section__item-title">{{ event.title }}</h3>
                                             <p>{{ event.description }}</p>
+                                            {% if event.start_date %}
                                             <span>{{ event.start_date|date:"d.m.Y" }}</span>
+                                            {% endif %}
                                         </div>
                                     </a>
                                 </li>
